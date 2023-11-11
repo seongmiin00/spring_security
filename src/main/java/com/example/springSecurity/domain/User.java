@@ -12,10 +12,6 @@ import java.util.Collection;
 @Setter
 @RequiredArgsConstructor
 public class User implements UserDetails {
-    private Long id;
-    private String userId;
-    private String password;
-
 
 
     @Override
