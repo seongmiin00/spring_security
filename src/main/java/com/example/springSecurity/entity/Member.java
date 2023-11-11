@@ -1,5 +1,6 @@
 package com.example.springSecurity.entity;
 
+import com.example.springSecurity.domain.Role;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -10,7 +11,7 @@ import lombok.*;
 @Setter
 @Entity
 @NoArgsConstructor
-public class UserJoinDto {
+public class Member {
     @Id @GeneratedValue
     @Column(name = "userNum")
     private Long id;
@@ -18,12 +19,17 @@ public class UserJoinDto {
     private String password;
     private String name;
     private String phoneNum;
+    private boolean enabled; //탈퇴여부
+    private Role role; //회원등급
+
 
     @Builder
-    public UserJoinDto(String userId, String password, String name, String phoneNum){
+    public Member(String userId, String password, String name, String phoneNum, boolean enabled, Role role){
         this.userId = userId;
         this.password = password;
         this.name = name;
         this.phoneNum = phoneNum;
+        this.enabled = enabled;
+        this.role = role;
     }
 }
