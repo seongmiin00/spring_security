@@ -8,5 +8,5 @@ import java.util.Optional;
 
 @Repository
 public interface MemberRepository extends JpaRepository<Member,Long> { //JpaRepository를 상속받을 인터페이스를 작성
-    Optional<Member> findByUserId(String userId);
+    Member findByUserId(String userId);
 }

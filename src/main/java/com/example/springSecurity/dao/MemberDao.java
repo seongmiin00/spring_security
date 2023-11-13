@@ -3,21 +3,21 @@ package com.example.springSecurity.dao;
 import com.example.springSecurity.entity.Member;
 import com.example.springSecurity.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
-public class MemberDao {
+public class MemberDao implements UserDetailsService {
     private final MemberRepository memberRepository;
-    private final Member member;
 
     public void saveMember(Member member){
         memberRepository.save(member);
     }
 
-    public Optional<Member> findUser(String userId){
+    @Override
+    public Member loadUserByUsername(String userId) throws UsernameNotFoundException {
         return memberRepository.findByUserId(userId);
     }
 }
