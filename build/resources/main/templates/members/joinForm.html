@@ -1,10 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>회원가입</title>
+    <link th:href="@{/css/join.css}" type="text/css"
+          href="/css/join.css" rel="stylesheet">
 </head>
 <body>
-
+<div class="container">
+    <div class="joinTitle">회원가입</div>
+    <form th:action="@{/member/join}" th:object="${memberJoinDto}" method="post" class="joinForm">
+        <div class="form_id">
+            <div class="field">아이디</div>
+            <input type="text" th:field="*{userId}">
+        </div>
+        <div class="form_name">
+            <div class="field">이름</div>
+            <input type="text" th:field="*{name}">
+        </div>
+        <div class="form_password">
+            <div class="field">비밀번호</div>
+            <input type="password" th:field="*{password}">
+        </div>
+        <div class="form_phone">
+            <div class="field">전화번호</div>
+            <input type="text" name="first" value="010" readonly maxlength="3">
+            <div class="dash">-</div>
+            <input type="number" name="second" min="0" max="9999">
+            <div class="dash">-</div>
+            <input type="number" name="third" min="0" max="9999">
+        </div>
+        <input type="submit" value="가입">
+    </form>
+</div>
 </body>
 </html>

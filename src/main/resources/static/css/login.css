@@ -1,0 +1,71 @@
+.img_block {
+    width: 170px;
+    height: 160px;
+    margin: 20px 140px;
+}
+
+.container {
+    width: 450px;
+    height: 500px;
+    border-radius: 10px;
+    border: 2px solid #53B522;
+    background: #FFF;
+    margin: auto;
+    margin-top: 188px;
+}
+
+.field {
+    color: rgba(83, 181, 34, 0.90);
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    margin-bottom: 5px;
+}
+
+input#userId {
+    width: 244px;
+    height: 36px;
+    border-radius: 5px;
+    border: 1px solid #53B522;
+    background: #FFF;
+}
+
+input#password {
+    width: 244px;
+    height: 36px;
+    border-radius: 5px;
+    border: 1px solid #53B522;
+    background: #FFF;
+}
+
+input[type="submit"] {
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    background: #53B522;
+    border: 0px;
+    color: #FFF;
+    font-family: Noto Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+}
+
+form {
+    width: 250px;
+    height: 233px;
+    margin: auto;
+}
+
+.form_id {
+    margin-bottom: 10px;
+}
+
+.form_password {
+    margin-bottom: 40px;
+}

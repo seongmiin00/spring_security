@@ -1,0 +1,40 @@
+
+.img_block {
+    width: 170px;
+    height: 160px;
+    background: url(image/logo.jpg) lightgray 50% / cover no-repeat;
+}
+
+.container {
+    width: 450px;
+    height: 500px;
+    border-radius: 10px;
+    border: 2px solid #53B522;
+    background: #FFF;
+    margin: auto;
+    margin-top: 188px;
+}
+
+div {
+    margin: 50px auto;
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    background: rgba(83, 181, 34, 0.90);
+}
+
+a {
+    color: #FFF;
+    font-family: Noto Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+}

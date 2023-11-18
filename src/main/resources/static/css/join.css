@@ -1,0 +1,129 @@
+.container {
+    width: 450px;
+    height: 500px;
+    border-radius: 10px;
+    border: 1px solid #53B522;
+    background: #FFF;
+    margin: auto;
+    margin-top: 188px;
+}
+
+.joinTitle {
+    color: #53B522;
+    font-family: Noto Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    width: 92px;
+    height: 33px;
+    margin: 24px auto 0px;
+}
+
+form.joinForm {
+    margin: 32px auto;
+    width: 250px;
+}
+
+.field {
+    color: rgba(83, 181, 34, 0.90);
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    height: 17px;
+    margin-bottom: 10px;
+}
+
+.form_phone {
+    color: rgba(83, 181, 34, 0.90);
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    height: 61px;
+    margin-bottom: 10px;
+}
+
+input#userId {
+    width: 244px;
+    height: 31px;
+    border-radius: 5px;
+    border: 1px solid #53B522;
+    background: #FFF;
+}
+
+input#name {
+    width: 244px;
+    height: 31px;
+    border-radius: 5px;
+    border: 1px solid #53B522;
+    background: #FFF;
+}
+
+input#password {
+    width: 244px;
+    height: 31px;
+    border-radius: 5px;
+    border: 1px solid #53B522;
+    background: #FFF;
+}
+
+input[type="text"] {
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #53B522;
+    background: #FFF;
+    float: left;
+}
+
+input[type="number"] {
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #53B522;
+    background: #FFF;
+    float: left;
+}
+
+.dash {
+    float: left;
+    margin: 8px 1px;
+}
+
+.form_id {
+    height: 62px;
+    margin-bottom: 10px;
+}
+
+.form_name {
+    height: 62px;
+    margin-bottom: 10px;
+}
+
+.form_password {
+    height: 62px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    background: #53B522;
+    border: 0px;
+    color: #FFF;
+    font-family: Noto Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    margin-top: 23px;
+}
