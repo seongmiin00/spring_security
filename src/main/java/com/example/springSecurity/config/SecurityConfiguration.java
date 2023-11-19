@@ -24,7 +24,7 @@ public class SecurityConfiguration { //spring security 버전 업데이트 후�
                 .formLogin(formLogin -> formLogin // 폼 기반 로그인 설정
                         .loginPage("/member/loginForm") //로그인 페이지로 사용할 url 설
                         .loginProcessingUrl("/member/login") //로그인 로직 실행시킬 url
-                        .defaultSuccessUrl("/") //로그인 성공시 이동할 url
+                        .defaultSuccessUrl("/member/success") //로그인 성공시 이동할 url
                         .failureUrl("/loginError") //로그인 실패시 작동
                         //.successHandler() //로그인 성공시 실행 시킬 로직
                 )

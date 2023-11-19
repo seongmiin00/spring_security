@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>main</title>
+<!--    <link rel="stylesheet" type="text/css" href="/css/main.css">-->
+    <style>
+        div {
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <p>세션을 이용한 로그인 성공</p>
+    <div><div th:text="${userInfo.name}"></div>님 안녕하세요.</div>
+    <a href="/member/logout">로그아웃</a>
+</div>
+</body>
+</html>
